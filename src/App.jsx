@@ -4,10 +4,17 @@
 // import Conditional from './embedding-expression/Conditional'
 // // import Welcome from './embedding-expression/Welcome'
 
-import Home from "./functional-components/hooks/useContext/theme/Home"
+import { Link, Route, Router, Routes } from "react-router-dom"
+// import Home from "./functional-components/hooks/useContext/theme/Home"
 import { ThemeProvider } from "./functional-components/hooks/useContext/theme/ThemeContext"
 import { UserApiContext, UserApiProvider } from "./functional-components/hooks/useContext/user-list/UserApiContext"
 import UserList from "./functional-components/hooks/useContext/user-list/UserList"
+import Home from "./React-Router-Dom/Home"
+import About from "./React-Router-Dom/About"
+import Products from "./dynamic-routing/Products"
+import ProductDetail from "./dynamic-routing/ProductDetail"
+import Indexxx from "../task/Indexxx"
+import SimpleForm from "./form/SimpleForm"
 
 // import Basic from "./functional-components/Basic"
 // import Home from "./functional-components/hooks/useContext/theme/Home"
@@ -44,10 +51,40 @@ function App() {
 
 
  {/* 2.user List */}
-<UserApiProvider>
+{/* <UserApiProvider>
   <UserList/>
-</UserApiProvider>
- 
+</UserApiProvider> */}
+
+
+{/* ----react-router-dom----- */}
+{/* 1.basic  */}
+{/* <div>
+  <nav>
+    <Link to='/'>Home</Link>
+    <Link to='/About'>About</Link>
+  </nav>
+
+  <Routes>
+    <Route path='/' element={<Home/>} />
+    <Route path='/about' element={<About/>}/>
+  </Routes>
+
+</div> */}
+
+
+
+{/* -----dynamic routing--- 
+<Routes>
+  <Route path='/' element={<Products/>}/>
+  <Route path='/products/:id' element={<ProductDetail/>}/>
+</Routes>
+  */}
+
+{/* 
+ <Indexxx/> */}
+
+
+ <SimpleForm/>
  </>
   )
 }
