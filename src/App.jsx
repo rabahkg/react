@@ -4,7 +4,7 @@
 // import Conditional from './embedding-expression/Conditional'
 // // import Welcome from './embedding-expression/Welcome'
 
-import { Link, Route, Router, Routes } from "react-router-dom"
+import {  Link, Route, Router, Routes } from "react-router-dom"
 // import Home from "./functional-components/hooks/useContext/theme/Home"
 import { ThemeProvider } from "./functional-components/hooks/useContext/theme/ThemeContext"
 import { UserApiContext, UserApiProvider } from "./functional-components/hooks/useContext/user-list/UserApiContext"
@@ -15,6 +15,7 @@ import Products from "./dynamic-routing/Products"
 import ProductDetail from "./dynamic-routing/ProductDetail"
 import Indexxx from "../task/Indexxx"
 import SimpleForm from "./form/SimpleForm"
+import Form from "./form/Form"
 
 // import Basic from "./functional-components/Basic"
 // import Home from "./functional-components/hooks/useContext/theme/Home"
@@ -83,8 +84,10 @@ function App() {
 {/* 
  <Indexxx/> */}
 
+{/* 
+ <SimpleForm/> */}
 
- <SimpleForm/>
+ <Form/>
  </>
   )
 }
